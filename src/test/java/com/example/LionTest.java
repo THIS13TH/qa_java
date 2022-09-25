@@ -1,7 +1,5 @@
 package com.example;
 
-import com.example.Feline;
-import com.example.Lion;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -26,7 +24,7 @@ public class LionTest {
             Lion lion = new Lion(" ", feline);
             //act
             lion.doesHaveMane();
-        }catch (Exception thrown){
+        } catch (Exception thrown) {
             //assert
             assertNotEquals(" ", thrown.getMessage());
         }
@@ -37,9 +35,10 @@ public class LionTest {
         //arrange
         String sex = "asd";
         //act
-        try{Lion lion = new Lion(sex, feline);
-            Assert.fail("Exception thrown");}
-        catch (Exception thrown) {
+        try {
+            Lion lion = new Lion(sex, feline);
+            Assert.fail("Exception thrown");
+        } catch (Exception thrown) {
             //assert
             assertNotEquals(sex, thrown.getMessage());
         }
@@ -89,8 +88,4 @@ public class LionTest {
         //assert
         assertEquals(expectedEatMeat, actualEatMeat);
     }
-
-
-
-
 }

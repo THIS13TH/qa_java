@@ -1,6 +1,5 @@
 package com.example;
 
-import com.example.Animal;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -19,11 +18,12 @@ public class AnimalTest {
             //act
             animal.getFood(badFoodRequest);
             Assert.fail("Exception thrown");
-        }catch (Exception thrown){
+        } catch (Exception thrown) {
             //assert
             assertNotEquals(badFoodRequest, thrown.getMessage());
         }
     }
+
     @Test
     public void getFamilyCorrectReturnValue() {
         //arrange
@@ -45,6 +45,5 @@ public class AnimalTest {
         //assert
         assertEquals(expectedEat, actualEat);
     }
-
 
 }

@@ -1,6 +1,5 @@
 package com.example;
 
-import com.example.Feline;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
@@ -13,10 +12,9 @@ public class FelineParamTest {
 
     public FelineParamTest(int countKittens) {
         this.countKittens = countKittens;
-
     }
 
-    @Parameterized.Parameters
+    @Parameterized.Parameters(name = "Тестовые данные: {0}")
     public static Object[][] getKittens() {
         return new Object[][]{
                 {10},

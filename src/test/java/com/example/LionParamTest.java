@@ -1,7 +1,5 @@
 package com.example;
 
-import com.example.Feline;
-import com.example.Lion;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;

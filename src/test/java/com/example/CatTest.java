@@ -1,7 +1,5 @@
 package com.example;
 
-import com.example.Cat;
-import com.example.Feline;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -16,7 +14,6 @@ import java.util.List;
 public class CatTest {
     @Mock
     Feline feline;
-
 
     @Test
     public void GetFoodMethodTest() throws Exception {
